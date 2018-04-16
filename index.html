@@ -1,4 +1,4 @@
-//  99991
+// 8888
 
 <!doctype html>
 <html>
@@ -138,9 +138,9 @@ function profile () {
   var codepen           = `https://codepen.io/${username}`
   
   function makeLinkUrl (username) {
-     var gitter           =  `https://gitter.im/${username}/~embed`
+    return  `https://gitter.im/${username}/~embed`
   }
-  makeLinkUrl (username)
+  var gitter           = makeLinkUrl (username)
 // HTML
   var cardContainer = bel`
     <div class=${css.cardContainer}>
