@@ -1,4 +1,4 @@
-// 211111
+// 555
 
 <!doctype html>
 <html>
@@ -157,9 +157,13 @@ function profile () {
                     CARD EVENT LISTENERS
   ---------------------------------------------------------- */
   /* --------------- hover & unhover the card ---------------*/
+ 
+  
+  var  makeGitterChatbox =  makeGitterChatbox1 (username)
+  
+  
   var cardContainer_hover = bel`
-    <div class=${css.cardContainer_hover}>
-      <div class=${css.cardGitterChat} ><iframe class=${css.iframe} src=${ gitter}></iframe></div>
+    
       
       <div class=${css.cardSocial}>
         <a href=${twitter} target='_blank'>
@@ -174,12 +178,14 @@ function profile () {
       <div class=${css.cardText}>${cardText}</div>
     </div>
   `
-  
+  makeGitterChatbox
   function hoverCard (event) {
+    el.appendChild( makeGitterChatbox)
     el.appendChild(cardContainer_hover)
     el.removeChild(cardContainer)
   }
   function unhoverCard (event) {
+    el.removeChild( makeGitterChatbox)
     el.removeChild(cardContainer_hover)
     el.appendChild(cardContainer)
   }
