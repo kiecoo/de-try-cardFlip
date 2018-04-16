@@ -10,7 +10,7 @@
   <body>
     <script>
    
-var makeLinkUrl = require('./index.js')   
+var makeGitterChatbox1 = require('./index.js')      
 var bel = require('bel')
 var csjs = require('csjs-inject')
   
@@ -178,7 +178,7 @@ function profile () {
       <div class=${css.cardText}>${cardText}</div>
     </div>
   `
-  makeGitterChatbox
+  
   function hoverCard (event) {
     el.appendChild( makeGitterChatbox)
     el.appendChild(cardContainer_hover)
