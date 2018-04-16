@@ -137,8 +137,10 @@ function profile () {
   var github            = `https://github.com/${username}`
   var codepen           = `https://codepen.io/${username}`
   
-  var gitter           =  `https://gitter.im/${username}/~embed`
-  
+  function makeLinkUrl (username) {
+     var gitter           =  `https://gitter.im/${username}/~embed`
+  }
+  makeLinkUrl (username)
 // HTML
   var cardContainer = bel`
     <div class=${css.cardContainer}>
